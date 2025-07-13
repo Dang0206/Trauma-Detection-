@@ -9,6 +9,7 @@ After segmentation, the textual data was converted into a numerical format to be
 -	The vectorizer was configured with ngram_range=(1, 2) to include both unigrams (single words) and bigrams (two consecutive words).
 -	CountVectorizer was fit on the training set to learn the vocabulary and then applied to both the training and test sets to ensure consistency.
 After vectorization, the Logistic Regression model is train in a 10-fold cross-validation framework with random_state=42 to ensure reproducibility. The model was then trained on the vectorized training data.
+
  Gemini-2.0-Flash
 
 During experimentation, Gemini-2.0-Flash was accessed via the API provided by Google, connected through the google.generativeai library using the free-tier access.A custom prompt was designed to guide the model, containing detailed label descriptions, contextual information, and specific instructions on expected outputs. 
